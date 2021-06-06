@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+    {% include 'reusable/navbar.html' %}
+    <main id="main" class="page">
+        <div class="container-fluid">
+            <div class="content">
+                <header class="text-start text-indent">
+                    <h1>Услуги</h1>
+                </header>
+                <div class="divider mb-5"></div>
+                <div class="text text-start text-indent">
+                    <p>Second page</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    {% include 'reusable/footer.html' %}
+{% endblock %}
