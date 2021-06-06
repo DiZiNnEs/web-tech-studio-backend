@@ -1,3 +1,10 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView, FormView
 
-# Create your views here.
+
+class IndexView(TemplateView):
+    template_name = 'main_app/index.html'
+
+
+class FeedbackFormView(TemplateView):
+    template_name = 'main_app/services.html'
