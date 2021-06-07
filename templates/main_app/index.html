@@ -36,50 +36,12 @@
 
                     <!-- line -->
                     <section class="box-line mb-5">
-                        <!-- box-item-1 -->
-                        <div class="box-line__item">
-                            <div class="card card--icon">
-                                <div class="card__body">
-                                    <img src="{% static 'images/coding.svg' %}" alt="logo">
-                                    <div class="card__title">
-                                        <h5>Создание сайта</h5>
-                                        <p>Профиссеональная разработка сайтов с использованием
-                                            соверменных инстументов</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- box-item-1/end -->
+                        {% include 'main_app/reusable/box-item.html' with name='Создание сайта' text='Профиссеональная разработка сайтов с использованием соверменных инстументов' staticName='images/coding.svg' %}
 
-                        <!-- box-item-2 -->
-                        <div class="box-line__item">
-                            <div class="card card--icon">
-                                <div class="card__body">
-                                    <img src="{% static 'images/server.svg' %}" alt="logo">
-                                    <div class="card__title">
-                                        <h5>Настройка сервера</h5>
-                                        <p>Правильная и адаптивная конфигурация под разные системы
-                                            по желанию нашего клиента</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- box-item-2/end -->
+                        {% include 'main_app/reusable/box-item.html' with name='Настройка сервера' text='Правильная и адаптивная конфигурация под разные системы по желанию нашего клиента' staticName='images/server.svg' %}
 
-                        <!-- box-item-3 -->
-                        <div class="box-line__item">
-                            <div class="card card--icon">
-                                <div class="card__body">
-                                    <img src="{% static 'images/seo.svg' %}" alt="logo">
-                                    <div class="card__title">
-                                        <h5>SEO продвижение</h5>
-                                        <p>Повышение рейтинга сайта в поисковый выдаче, а также
-                                            его посещения пользователями</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- box-item-3/end -->
+                        {% include 'main_app/reusable/box-item.html' with name='SEO продвижение' text='Повышение рейтинга сайта в поисковый выдаче, а также его посещения пользователями' staticName='images/seo.svg' %}
+
                     </section>
                     <!-- line -->
                     <a href="#" class="btn btn-primary">Все услуги</a>
@@ -104,63 +66,27 @@
                     <!-- section-card -->
                     <section class="wrap-line">
                         <!-- card-1 -->
-                        <div class="card-mini">
-                            <div class="card-mini_body">
-                                <img src="{% static 'images/code.svg' %}" alt="Выполнено работ">
-                                <h5>12</h5>
-                            </div>
-                            <p>Landing page</p>
-                        </div>
+                        {% include 'main_app/reusable/card.html' with title='Landing page' number='12' staticName='images/code.svg'  %}
                         <!-- card-1/end -->
 
                         <!-- card-2 -->
-                        <div class="card-mini">
-                            <div class="card-mini_body">
-                                <img src="{% static 'images/code.svg' %}" alt="Выполнено работ">
-                                <h5>2</h5>
-                            </div>
-                            <p>Multi Landing</p>
-                        </div>
+                         {% include 'main_app/reusable/card.html' with title='Multi Landing' number='2' staticName='images/code.svg' %}
                         <!-- card-2/end -->
 
                         <!-- card-3 -->
-                        <div class="card-mini">
-                            <div class="card-mini_body">
-                                <img src="{% static 'images/code.svg' %}" alt="Выполнено работ">
-                                <h5>5</h5>
-                            </div>
-                            <p>Промо-сайт</p>
-                        </div>
+                        {% include 'main_app/reusable/card.html' with title='Промо-сайт' number='5' staticName='images/code.svg' %}
                         <!-- card-3/end -->
 
                         <!-- card-4-->
-                        <div class="card-mini">
-                            <div class="card-mini_body">
-                                <img src="{% static 'images/code.svg' %}" alt="Выполнено работ">
-                                <h5>3</h5>
-                            </div>
-                            <p>Сайт-витрина</p>
-                        </div>
+                        {% include 'main_app/reusable/card.html' with title='Сайт-витрина' number='3' staticName='images/code.svg' %}
                         <!-- card-4/end -->
 
                         <!-- card-5 -->
-                        <div class="card-mini">
-                            <div class="card-mini_body">
-                                <img src="{% static 'images/code.svg' %}" alt="Выполнено работ">
-                                <h5>1</h5>
-                            </div>
-                            <p>Интернет-магазин</p>
-                        </div>
+                        {% include 'main_app/reusable/card.html' with title='Интернет-магазин' number='1' staticName='images/code.svg' %}
                         <!-- card-5/end -->
 
                         <!-- card-6 -->
-                        <div class="card-mini">
-                            <div class="card-mini_body">
-                                <img src="{% static 'images/code.svg' %}" alt="Выполнено работ">
-                                <h5>1</h5>
-                            </div>
-                            <p>Социальная сеть</p>
-                        </div>
+                        {% include 'main_app/reusable/card.html' with title='Социальная сеть' number='1' staticName='images/code.svg' %}
                         <!-- card-6/end -->
                     </section>
                     <!-- section-card/end -->
@@ -187,59 +113,15 @@
                     <!-- line -->
                     <section class="box-line mb-5">
                         <!-- item-1 -->
-                        <div class="box-line__item">
-                            <div class="card card--services">
-                                <div class="card__body">
-                                    <img src="{% static 'images/work.jpg' %}" alt="">
-                                    <div class="card__title">
-                                        <h5>Frontend разработка</h5>
-                                        <p>Клиентская сторона пользовательского интерфейса Большой опыт в верстке как
-                                            одностраничные
-                                            сайты (Landing page), так и масштабные проекты интернет-магазинов
-                                            и сайты крупных компаний
-                                        </p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% include 'main_app/reusable/box-our-direction.html' with title='Frontend разработка' text='Клиентская сторона пользовательского интерфейса Большой опыт в верстке как одностраничные сайты (Landing page), так и масштабные проекты интернет-магазинов и сайты крупных компаний' staticName='images/work.jpg' urlLink='#' urlText='Подробнее' %}
                         <!-- item-1/end -->
 
                         <!-- item-2 -->
-                        <div class="box-line__item">
-                            <div class="card card--services">
-                                <div class="card-body">
-                                    <img src="{% static 'images/work.jpg' %}" alt="">
-                                    <div class="card__title">
-                                        <h5>Backend разработка</h5>
-                                        <p>Программно-аппаратная часть сервиса. Backend отвечает за осуществление
-                                            функционирования внутренней части веб-сайта, мы используем
-                                            PHP + MySql
-                                        </p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% include 'main_app/reusable/box-our-direction.html' with title='Backend разработка' text='Программно-аппаратная часть сервиса. Backend отвечает за осуществление функционирования внутренней части веб-сайта, мы используем PHP + MySql' staticName='images/work.jpg' urlLink='#' urlText='Подробнее' %}
                         <!-- item-2/end -->
 
                         <!-- item-3 -->
-                        <div class="box-line__item">
-                            <div class="card card--services">
-                                <div class="card__body">
-                                    <img src="{% static 'images/work.jpg' %}"alt="services">
-                                    <div class="card__title">
-                                        <h5>Настройка сервера</h5>
-                                        <p>В целях повышения производительности ИТ-инфраструктуры
-                                            вашей компании, предлагаем весь спектр услуг
-                                            по настройке серверов на базе операционных систем
-                                            Windows, Ubuntu
-                                        </p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% include 'main_app/reusable/box-our-direction.html' with title='Настройка сервера' text='В целях повышения производительности ИТ-инфраструктуры вашей компании, предлагаем весь спектр услуг по настройке серверов на базе операционных систем Windows, Ubuntu' staticName='images/work.jpg' urlLink='#' urlText='Подробнее' %}
                         <!-- item-3/end -->
                     </section>
                     <!-- line/end -->
@@ -263,33 +145,15 @@
                     <!-- line -->
                     <section class="box-line mb-5">
                         <!-- item-1 -->
-                        <div class="box-line__item">
-                            <div class="card">
-                                <div class="card__body img-wrap">
-                                    <img src="{% static 'images/work.jpg' %}" alt="site">
-                                </div>
-                            </div>
-                        </div>
+                        {% include 'main_app/reusable/our-works-box.html' with staticName='images/work.jpg' %}
                         <!-- item-1/end -->
 
                         <!-- item-2 -->
-                        <div class="box-line__item">
-                            <div class="card">
-                                <div class="card__body img-wrap">
-                                    <img src="{% static 'images/work.jpg' %}" alt="site">
-                                </div>
-                            </div>
-                        </div>
+                         {% include 'main_app/reusable/our-works-box.html' with staticName='images/work.jpg' %}
                         <!-- item-2/end -->
 
                         <!-- item-3 -->
-                        <div class="box-line__item">
-                            <div class="card">
-                                <div class="card__body img-wrap">
-                                    <img src="{% static 'images/work.jpg' %}" alt="site">
-                                </div>
-                            </div>
-                        </div>
+                         {% include 'main_app/reusable/our-works-box.html' with staticName='images/work.jpg' %}
                         <!-- item-3/end -->
                     </section>
                     <!-- line/end -->
