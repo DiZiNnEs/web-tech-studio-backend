@@ -412,10 +412,15 @@
                         <header class="block-heading text-center ml-auto mb-3">
                             <h5>Свяжитесь с нами</h5>
                         </header>
-                        <form class="form" action="">
+                        <form class="form" method="post">
+                            {% csrf_token %}
                             <div class="form__group">
                                 <input class="form__input" type="email" name="email" id="email"
                                        placeholder="Введите ваш email">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__input" type="text" name="username" id="name"
+                                       placeholder="Введите ваш имя">
                             </div>
                             <div class="form__group">
                                 <input class="form__input" type="text" name="title" id="title"
