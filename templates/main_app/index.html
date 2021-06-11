@@ -7,197 +7,440 @@
 {% block body %}
     {% load static %}
     {% include 'reusable/navbar.html' %}
-    <main id="main" class="main">
-        <!-- one -->
-        <section class="s-wrap s-wrap--inner-center s-wrap--fscreen dark-bg">
+
+    <main class="main">
+        <!-- first-block -->
+        <section id="home" class="s-wrap s-wrap--fscreen s-bg">
             <div class="container">
-                <div class="o-content-flex-end">
+                <div class="inner-Ycenter">
                     <!-- page-title -->
-                    <arcticle class="block-heading text-end">
-                        <p class="text-white mb-2">IT - WebTech studio</p>
-                        <h1 class="mb-1">Мы создаем качественный и востребованный продукт</h1>
-                        <a href="#" class="btn btn-primary">Наши проекты</a>
-                    </arcticle>
+                    <article class="block-heading block-heading--indent mb-5">
+                        <p class="text-white mb-1 wow animate__fadeInLeft" data-wow-duration="1s">
+                            <span class="text-purple">IT - WebTech</span>
+                            studio
+                        </p>
+                        <h1 class="wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">Мы создаем
+                            качественный и востребованный продукт</h1>
+                    </article>
+                    <button id="btnWorks" class="btn wow animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="1s">Наши проекты
+                    </button>
                     <!-- page-title/end -->
                 </div>
             </div>
         </section>
-        <!-- one/end -->
+        <!-- first-block/end -->
 
         <!-- two -->
-        <section class="s-wrap">
+        <section id="services" class="s-wrap s-wrap--block-left wow animate__fadeInLeft" data-wow-duration="1.5s"
+                 data-wow-delay=".5s">
             <div class="container">
-                <div class="o-content text-center">
-                    <!-- page-title -->
-                    <header class="block-heading ml-auto mb-5">
-                        <h2>Ваши преимущества в сотрудничестве с нами</h2>
-                    </header>
-                    <!-- page-title/end -->
+                <!-- row -->
+                <div class="row mb-5">
+                    <!-- item-1 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="1s">
+                        <div class="card card--services">
+                            <div class="card__body">
+                                <div class="card__icon mb-4">
+                                    <svg width="95" height="95" viewBox="0 0 414 414" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M367 24H47C21.0547 24.0273 0.0273438 45.0547 0 71V342.301C0.0273438 368.246 21.0547 389.27 47 389.301H367C392.945 389.27 413.973 368.246 414 342.301V71C413.973 45.0547 392.945 24.0273 367 24ZM47 38H367C385.219 38.0195 399.98 52.7812 400 71V103.73H14V71C14.0195 52.7812 28.7812 38.0195 47 38ZM367 375.301H47C28.7812 375.281 14.0195 360.516 14 342.301V117.73H400V342.305C399.98 360.52 385.219 375.285 367 375.305V375.301Z"
+                                              fill="#662D91"/>
+                                        <path d="M350.82 268.434H240.824C236.957 268.434 233.824 271.57 233.824 275.434C233.824 279.301 236.957 282.434 240.824 282.434H350.824C354.691 282.434 357.824 279.301 357.824 275.434C357.824 271.57 354.691 268.434 350.824 268.434H350.82Z"
+                                              fill="#662D91"/>
+                                        <path d="M350.82 319.043H240.824C236.957 319.043 233.824 322.18 233.824 326.043C233.824 329.91 236.957 333.043 240.824 333.043H350.824C354.691 333.043 357.824 329.91 357.824 326.043C357.824 322.18 354.691 319.043 350.824 319.043H350.82Z"
+                                              fill="#662D91"/>
+                                        <path d="M350.82 167.215H240.824C236.957 167.215 233.824 170.352 233.824 174.215C233.824 178.082 236.957 181.215 240.824 181.215H350.824C354.691 181.215 357.824 178.082 357.824 174.215C357.824 170.352 354.691 167.215 350.824 167.215H350.82Z"
+                                              fill="#662D91"/>
+                                        <path d="M350.82 217.824H240.824C236.957 217.824 233.824 220.961 233.824 224.824C233.824 228.691 236.957 231.824 240.824 231.824H350.824C354.691 231.824 357.824 228.691 357.824 224.824C357.824 220.961 354.691 217.824 350.824 217.824H350.82Z"
+                                              fill="#662D91"/>
+                                        <path d="M100.914 92.7812C112.945 92.7812 122.695 83.0273 122.695 71C122.695 58.9688 112.941 49.2148 100.914 49.2148C88.8828 49.2148 79.1289 58.9688 79.1289 71C79.1445 83.0234 88.8867 92.7695 100.914 92.7812ZM100.914 63.2188C105.211 63.2188 108.695 66.7031 108.695 71C108.695 75.2969 105.211 78.7812 100.914 78.7812C96.6133 78.7812 93.1289 75.2969 93.1289 71C93.1367 66.7031 96.6172 63.2227 100.914 63.2188Z"
+                                              fill="#662D91"/>
+                                        <path d="M50.4766 92.7812C62.5078 92.7852 72.2656 83.0312 72.2656 71.0039C72.2695 58.9727 62.5156 49.2148 50.4844 49.2148C38.4531 49.2148 28.6992 58.9688 28.6992 71C28.7148 83.0234 38.457 92.7656 50.4766 92.7812ZM50.4766 63.2188C54.7773 63.2148 58.2617 66.6992 58.2617 71C58.2617 75.2969 54.7773 78.7812 50.4805 78.7812C46.1797 78.7812 42.6953 75.2969 42.6953 71C42.6992 66.7031 46.1836 63.2227 50.4766 63.2188Z"
+                                              fill="#662D91"/>
+                                        <path d="M151.348 92.7812C163.379 92.7812 173.133 83.0273 173.133 71C173.129 58.9688 163.379 49.2148 151.348 49.2148C139.316 49.2148 129.563 58.9688 129.566 71C129.578 83.0234 139.324 92.7695 151.348 92.7812ZM151.348 63.2188C155.645 63.2188 159.133 66.7031 159.133 71C159.133 75.2969 155.645 78.7812 151.348 78.7812C147.051 78.7812 143.566 75.2969 143.566 71C143.57 66.7031 147.051 63.2227 151.348 63.2188Z"
+                                              fill="#662D91"/>
+                                        <path d="M188 167.215H61C57.1328 167.215 54 170.352 54 174.215V326.043C54 329.91 57.1328 333.043 61 333.043H188C191.867 333.043 195 329.91 195 326.043V174.215C195 170.352 191.867 167.215 188 167.215ZM181 319.043H68V181.215H181V319.043Z"
+                                              fill="#662D91"/>
+                                    </svg>
+                                </div>
+                                <header class="card__title">
+                                    <h5>Создание сайта</h5>
+                                    <p>Верстка макета для сайта - дизайн взаимодествия
+                                        с пользователем. Большой опыт в разработке сайтов
+                                        как с посадкой на СMS, так и с разработаной
+                                        в ручную - системой управления сайтом
+                                    </p>
+                                </header>
+                                <a class="card__link" href="">Узнать больше <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-1/end -->
 
-                    <!-- line -->
-                    <section class="box-line mb-5">
-                        {% include 'main_app/reusable/box-item.html' with name='Создание сайта' text='Профиссеональная разработка сайтов с использованием соверменных инстументов' staticName='images/coding.svg' %}
+                    <!-- item-2 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="1.5s">
+                        <div class="card card--services">
+                            <div class="card__body">
+                                <div class="card__icon mb-4">
+                                    <svg width="95" height="95" viewBox="0 0 480 480" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M456 144C469.255 144 480 133.255 480 120V24C480 10.745 469.255 0 456 0H24C10.745 0 0 10.745 0 24V120C0 133.255 10.745 144 24 144H48V168H24C10.745 168 0 178.745 0 192V288C0 301.255 10.745 312 24 312H48V336H24C10.745 336 0 346.745 0 360V456C0 469.255 10.745 480 24 480H456C469.255 480 480 469.255 480 456V360C480 346.745 469.255 336 456 336H432V312H456C469.255 312 480 301.255 480 288V192C480 178.745 469.255 168 456 168H432V144H456ZM456 352C460.418 352 464 355.582 464 360V456C464 460.418 460.418 464 456 464H24C19.582 464 16 460.418 16 456V360C16 355.582 19.582 352 24 352H456ZM64 336V312H80V336H64ZM96 336V312H384V336H96ZM400 336V312H416V336H400ZM456 184C460.418 184 464 187.582 464 192V288C464 292.418 460.418 296 456 296H24C19.582 296 16 292.418 16 288V192C16 187.582 19.582 184 24 184H456ZM64 168V144H80V168H64ZM96 168V144H384V168H96ZM400 168V144H416V168H400ZM24 128C19.582 128 16 124.418 16 120V24C16 19.582 19.582 16 24 16H456C460.418 16 464 19.582 464 24V120C464 124.418 460.418 128 456 128H24Z"
+                                              fill="#662D91"/>
+                                        <path d="M256 64H94.528C90.11 51.503 76.397 44.954 63.901 49.373C51.405 53.792 44.855 67.503 49.273 80C53.691 92.497 67.404 99.046 79.9 94.627C86.735 92.211 92.112 86.835 94.528 80H256C260.418 80 264 76.418 264 72C264 67.582 260.418 64 256 64ZM72 80C67.582 80 64 76.418 64 72C64 67.582 67.582 64 72 64C76.418 64 80 67.582 80 72C80 76.418 76.418 80 72 80Z"
+                                              fill="#662D91"/>
+                                        <path d="M368 32H352V48H368V32Z" fill="#662D91"/>
+                                        <path d="M400 32H384V48H400V32Z" fill="#662D91"/>
+                                        <path d="M432 32H416V48H432V32Z" fill="#662D91"/>
+                                        <path d="M336 32H320V48H336V32Z" fill="#662D91"/>
+                                        <path d="M304 32H288V48H304V32Z" fill="#662D91"/>
+                                        <path d="M368 64H352V80H368V64Z" fill="#662D91"/>
+                                        <path d="M400 64H384V80H400V64Z" fill="#662D91"/>
+                                        <path d="M432 64H416V80H432V64Z" fill="#662D91"/>
+                                        <path d="M336 64H320V80H336V64Z" fill="#662D91"/>
+                                        <path d="M304 64H288V80H304V64Z" fill="#662D91"/>
+                                        <path d="M368 96H352V112H368V96Z" fill="#662D91"/>
+                                        <path d="M400 96H384V112H400V96Z" fill="#662D91"/>
+                                        <path d="M432 96H416V112H432V96Z" fill="#662D91"/>
+                                        <path d="M336 96H320V112H336V96Z" fill="#662D91"/>
+                                        <path d="M304 96H288V112H304V96Z" fill="#662D91"/>
+                                        <path d="M256 232H94.528C90.11 219.503 76.397 212.954 63.901 217.373C51.405 221.792 44.855 235.503 49.273 248C53.691 260.497 67.404 267.046 79.9 262.627C86.735 260.211 92.111 254.834 94.527 248H256C260.418 248 264 244.418 264 240C264 235.582 260.418 232 256 232ZM72 248C67.582 248 64 244.418 64 240C64 235.582 67.582 232 72 232C76.418 232 80 235.582 80 240C80 244.418 76.418 248 72 248Z"
+                                              fill="#662D91"/>
+                                        <path d="M368 200H352V216H368V200Z" fill="#662D91"/>
+                                        <path d="M400 200H384V216H400V200Z" fill="#662D91"/>
+                                        <path d="M432 200H416V216H432V200Z" fill="#662D91"/>
+                                        <path d="M336 200H320V216H336V200Z" fill="#662D91"/>
+                                        <path d="M304 200H288V216H304V200Z" fill="#662D91"/>
+                                        <path d="M368 232H352V248H368V232Z" fill="#662D91"/>
+                                        <path d="M400 232H384V248H400V232Z" fill="#662D91"/>
+                                        <path d="M432 232H416V248H432V232Z" fill="#662D91"/>
+                                        <path d="M336 232H320V248H336V232Z" fill="#662D91"/>
+                                        <path d="M304 232H288V248H304V232Z" fill="#662D91"/>
+                                        <path d="M368 264H352V280H368V264Z" fill="#662D91"/>
+                                        <path d="M400 264H384V280H400V264Z" fill="#662D91"/>
+                                        <path d="M432 264H416V280H432V264Z" fill="#662D91"/>
+                                        <path d="M336 264H320V280H336V264Z" fill="#662D91"/>
+                                        <path d="M304 264H288V280H304V264Z" fill="#662D91"/>
+                                        <path d="M256 400H94.528C90.11 387.503 76.397 380.954 63.901 385.373C51.405 389.792 44.855 403.503 49.273 416C53.691 428.497 67.404 435.046 79.9 430.627C86.735 428.211 92.111 422.834 94.527 416H256C260.418 416 264 412.418 264 408C264 403.582 260.418 400 256 400ZM72 416C67.582 416 64 412.418 64 408C64 403.582 67.582 400 72 400C76.418 400 80 403.582 80 408C80 412.418 76.418 416 72 416Z"
+                                              fill="#662D91"/>
+                                        <path d="M368 368H352V384H368V368Z" fill="#662D91"/>
+                                        <path d="M400 368H384V384H400V368Z" fill="#662D91"/>
+                                        <path d="M432 368H416V384H432V368Z" fill="#662D91"/>
+                                        <path d="M336 368H320V384H336V368Z" fill="#662D91"/>
+                                        <path d="M304 368H288V384H304V368Z" fill="#662D91"/>
+                                        <path d="M368 400H352V416H368V400Z" fill="#662D91"/>
+                                        <path d="M400 400H384V416H400V400Z" fill="#662D91"/>
+                                        <path d="M432 400H416V416H432V400Z" fill="#662D91"/>
+                                        <path d="M336 400H320V416H336V400Z" fill="#662D91"/>
+                                        <path d="M304 400H288V416H304V400Z" fill="#662D91"/>
+                                        <path d="M368 432H352V448H368V432Z" fill="#662D91"/>
+                                        <path d="M400 432H384V448H400V432Z" fill="#662D91"/>
+                                        <path d="M432 432H416V448H432V432Z" fill="#662D91"/>
+                                        <path d="M336 432H320V448H336V432Z" fill="#662D91"/>
+                                        <path d="M304 432H288V448H304V432Z" fill="#662D91"/>
+                                    </svg>
+                                </div>
+                                <header class="card__title">
+                                    <h5>Настройка сервера</h5>
+                                    <p>В целях повышения производительности
+                                        ИТ-инфраструктуры вашей компании, предлагаем
+                                        весь спектр услуг по настройке и администрированию
+                                        серверов на базе
+                                        операционных систем Windows, GNU/Linux
+                                    </p>
+                                </header>
+                                <a class="card__link" href="">Узнать больше <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-2/end -->
 
-                        {% include 'main_app/reusable/box-item.html' with name='Настройка сервера' text='Правильная и адаптивная конфигурация под разные системы по желанию нашего клиента' staticName='images/server.svg' %}
-
-                        {% include 'main_app/reusable/box-item.html' with name='SEO продвижение' text='Повышение рейтинга сайта в поисковый выдаче, а также его посещения пользователями' staticName='images/seo.svg' %}
-
-                    </section>
-                    <!-- line -->
-                    <a href="#" class="btn btn-primary">Все услуги</a>
+                    <!-- item-3 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="2s">
+                        <div class="card card--services">
+                            <div class="card__body">
+                                <div class="card__icon mb-4">
+                                    <svg width="95" height="95" viewBox="0 0 512 512" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M32 168H16V136C16.0119 125.395 20.23 115.228 27.7289 107.729C35.2278 100.23 45.395 96.0119 56 96H328V80H312C310.418 80.0001 308.871 79.5309 307.555 78.6518C306.24 77.7728 305.214 76.5234 304.609 75.0615C304.003 73.5997 303.845 71.9911 304.153 70.4392C304.462 68.8873 305.224 67.4618 306.343 66.343L354.343 18.343C355.086 17.6001 355.968 17.0108 356.938 16.6087C357.909 16.2066 358.949 15.9997 360 15.9997C361.051 15.9997 362.091 16.2066 363.062 16.6087C364.032 17.0108 364.914 17.6001 365.657 18.343L413.657 66.343C414.776 67.4618 415.538 68.8873 415.847 70.4392C416.155 71.9911 415.997 73.5997 415.391 75.0615C414.786 76.5234 413.76 77.7728 412.445 78.6518C411.129 79.5309 409.582 80.0001 408 80H392V96H424C434.605 96.0119 444.772 100.23 452.271 107.729C459.77 115.228 463.988 125.395 464 136V296H448V136C447.993 129.637 445.462 123.537 440.962 119.038C436.463 114.538 430.363 112.007 424 112H392V256H376V72C376 69.8783 376.843 67.8434 378.343 66.3431C379.843 64.8429 381.878 64 384 64H388.687L360 35.313L331.313 64H336C338.122 64 340.157 64.8429 341.657 66.3431C343.157 67.8434 344 69.8783 344 72V264H328V112H56C49.6371 112.007 43.5369 114.538 39.0376 119.038C34.5384 123.537 32.0074 129.637 32 136V168ZM56 416H189.247L170.047 480H152V496H328V480H309.953L299.663 445.7L284.337 450.3L293.248 480H186.748L205.948 416H264V400H56C49.6371 399.993 43.5369 397.462 39.0376 392.962C34.5384 388.463 32.0074 382.363 32 376V368H256V352H32V184H16V376C16.0119 386.605 20.23 396.772 27.7289 404.271C35.2278 411.77 45.395 415.988 56 416V416ZM296 280V152H264V336H56V320H88V256C88 253.878 88.8429 251.843 90.3431 250.343C91.8434 248.843 93.8783 248 96 248H144C146.122 248 148.157 248.843 149.657 250.343C151.157 251.843 152 253.878 152 256V320H168V200C168 197.878 168.843 195.843 170.343 194.343C171.843 192.843 173.878 192 176 192H224C226.122 192 228.157 192.843 229.657 194.343C231.157 195.843 232 197.878 232 200V320H248V144C248 141.878 248.843 139.843 250.343 138.343C251.843 136.843 253.878 136 256 136H304C306.122 136 308.157 136.843 309.657 138.343C311.157 139.843 312 141.878 312 144V280H296ZM136 264H104V320H136V264ZM216 208H184V320H216V208ZM56 128V144H72V128H56ZM104 128H88V144H104V128ZM120 128V144H136V128H120ZM488.967 455.033C493.453 459.543 495.98 465.639 496 472C496.003 475.153 495.384 478.275 494.179 481.188C492.974 484.101 491.206 486.748 488.977 488.977C486.748 491.206 484.101 492.974 481.188 494.179C478.275 495.384 475.153 496.003 472 496C465.646 495.945 459.563 493.423 455.033 488.967L416.74 450.675C396.598 462.557 372.813 466.684 349.845 462.283C326.877 457.882 306.303 445.255 291.98 426.768C277.657 408.282 270.568 385.206 272.043 361.867C273.518 338.528 283.455 316.528 299.991 299.991C316.528 283.455 338.528 273.518 361.867 272.043C385.206 270.568 408.282 277.657 426.768 291.98C445.255 306.303 457.882 326.877 462.283 349.845C466.684 372.813 462.557 396.598 450.675 416.74L488.967 455.033ZM448 368C448 352.178 443.308 336.71 434.518 323.554C425.727 310.398 413.233 300.145 398.615 294.09C383.997 288.035 367.911 286.45 352.393 289.537C336.874 292.624 322.62 300.243 311.431 311.431C300.243 322.62 292.624 336.874 289.537 352.393C286.45 367.911 288.035 383.997 294.09 398.615C300.145 413.233 310.398 425.727 323.554 434.518C336.71 443.308 352.177 448 368 448C389.21 447.976 409.544 439.54 424.542 424.542C439.54 409.544 447.976 389.21 448 368V368ZM477.652 466.348L441.265 429.959C437.814 434.033 434.033 437.814 429.959 441.265L466.348 477.652C467.083 478.426 467.965 479.045 468.943 479.472C469.92 479.9 470.974 480.127 472.041 480.141C473.108 480.155 474.167 479.955 475.156 479.553C476.144 479.151 477.042 478.555 477.797 477.801C478.551 477.046 479.147 476.148 479.549 475.16C479.951 474.171 480.151 473.112 480.137 472.045C480.123 470.978 479.896 469.924 479.468 468.947C479.041 467.969 478.422 467.087 477.648 466.352L477.652 466.348ZM432 368C432 380.658 428.246 393.032 421.214 403.557C414.182 414.081 404.186 422.284 392.492 427.128C380.797 431.972 367.929 433.24 355.514 430.77C343.099 428.301 331.696 422.205 322.745 413.255C313.795 404.304 307.699 392.901 305.23 380.486C302.76 368.071 304.028 355.203 308.872 343.508C313.716 331.814 321.919 321.818 332.444 314.786C342.968 307.754 355.342 304 368 304C384.968 304.019 401.236 310.768 413.234 322.766C425.232 334.764 431.981 351.032 432 368V368ZM416 368C416 358.507 413.185 349.226 407.911 341.333C402.636 333.439 395.14 327.287 386.369 323.654C377.598 320.021 367.947 319.07 358.636 320.922C349.325 322.774 340.772 327.346 334.059 334.059C327.346 340.772 322.774 349.325 320.922 358.636C319.07 367.947 320.021 377.598 323.654 386.369C327.287 395.14 333.439 402.636 341.333 407.911C349.226 413.185 358.506 416 368 416C380.726 415.986 392.927 410.924 401.926 401.926C410.924 392.927 415.986 380.726 416 368ZM336 368H352C352.005 363.758 353.692 359.691 356.692 356.692C359.691 353.692 363.758 352.005 368 352V336C359.516 336.01 351.382 339.384 345.383 345.383C339.384 351.382 336.01 359.516 336 368ZM440 64H456C455.986 51.2739 450.924 39.0731 441.926 30.0744C432.927 21.0757 420.726 16.014 408 16V32C416.484 32.0095 424.618 35.384 430.617 41.3831C436.616 47.3822 439.99 55.516 440 64Z"
+                                              fill="#662D91"/>
+                                    </svg>
+                                </div>
+                                <header class="card__title">
+                                    <h5>SEO продвижение</h5>
+                                    <p>Улучшение позиций в результатах ответа поисковых
+                                        систем на поставленные запросы пользователей.
+                                        Привлечение на сайт большее количество посетителей
+                                    </p>
+                                </header>
+                                <a class="card__link" href="">Узнать больше <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-3/end -->
                 </div>
+                <!-- row/end -->
+
+                <!-- row -->
+                <div class="row">
+                    <!-- item-1 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay=".1s">
+                        <div class="card card--works">
+                            <div class="card__body">
+                                <h5 class="text-purple">2</h5>
+                                <p>Интернет-магазин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-1/end -->
+
+                    <!-- item-2 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay=".5s">
+                        <div class="card card--works">
+                            <div class="card__body">
+                                <h5 class="text-purple">12</h5>
+                                <p>Лендинг</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-2/end -->
+
+                    <!-- item-3 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="1s">
+                        <div class="card card--works">
+                            <div class="card__body">
+                                <h5 class="text-purple">4</h5>
+                                <p>Мульти-лендинг</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-3/end -->
+                </div>
+                <!-- row/end -->
+
+                <!-- row -->
+                <div class="row">
+                    <!-- item-1 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay=".1s">
+                        <div class="card card--works">
+                            <div class="card__body">
+                                <h5 class="text-purple">1</h5>
+                                <p>Социальная сеть</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-1/end -->
+
+                    <!-- item-2 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay=".5s">
+                        <div class="card card--works">
+                            <div class="card__body">
+                                <h5 class="text-purple">7</h5>
+                                <p>Сайта-витрин</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-2/end -->
+
+                    <!-- item-3 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="1s">
+                        <div class="card card--works">
+                            <div class="card__body">
+                                <h5 class="text-purple">8</h5>
+                                <p>Промо-сайтов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-3/end -->
+                </div>
+                <!-- row/end -->
             </div>
         </section>
         <!-- two/end -->
 
         <!-- three -->
-        <div class="s-wrap s-wrap--overlay">
+        <section class="s-wrap s-wrap--overlay">
             <div class="container">
-                <div class="o-content">
+                <div class="inner">
                     <!-- page-title -->
-                    <header class="block-heading mb-5">
-                        <h2>Стандарты</h2>
+                    <header class="block-heading block-heading--indent text-center ml-auto mb-5 wow animate__fadeIn"
+                            data-wow-duration="1s">
+                        <h2>Наши работы на которых мы специализируемся</h2>
                     </header>
                     <!-- page-title/end -->
 
-                    <p class="mb-3">Этот блок переделывается</p>
-
-                    <div class="divider mb-5"></div>
-                    <!-- section-card -->
-                    <section class="wrap-line">
-                        <!-- card-1 -->
-                        {% include 'main_app/reusable/card.html' with title='Landing page' number='12' staticName='images/code.svg'  %}
-                        <!-- card-1/end -->
-
-                        <!-- card-2 -->
-                         {% include 'main_app/reusable/card.html' with title='Multi Landing' number='2' staticName='images/code.svg' %}
-                        <!-- card-2/end -->
-
-                        <!-- card-3 -->
-                        {% include 'main_app/reusable/card.html' with title='Промо-сайт' number='5' staticName='images/code.svg' %}
-                        <!-- card-3/end -->
-
-                        <!-- card-4-->
-                        {% include 'main_app/reusable/card.html' with title='Сайт-витрина' number='3' staticName='images/code.svg' %}
-                        <!-- card-4/end -->
-
-                        <!-- card-5 -->
-                        {% include 'main_app/reusable/card.html' with title='Интернет-магазин' number='1' staticName='images/code.svg' %}
-                        <!-- card-5/end -->
-
-                        <!-- card-6 -->
-                        {% include 'main_app/reusable/card.html' with title='Социальная сеть' number='1' staticName='images/code.svg' %}
-                        <!-- card-6/end -->
+                    <!-- blog-1 -->
+                    <section class="blog blog--indent wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="blog__body">
+                            <header class="blog__title blog__title--line-left mb-5">
+                                <h4>Frontend разработка</h4>
+                            </header>
+                            <div class="blog__desc">
+                                <p>Клиентская сторона пользовательского интерфейса
+                                    Большой опыт в верстке как одностраничные сайты
+                                    (Landing page), так и масштабные проекты интернет-магазинов
+                                    и сайты крупных компаний </p>
+                            </div>
+                        </div>
                     </section>
-                    <!-- section-card/end -->
+                    <!-- blog-1/end -->
+
+                    <!-- blog-2 -->
+                    <section class="blog blog--indent blog--right wow animate__fadeIn" data-wow-duration="1s"
+                             data-wow-delay="1s">
+                        <div class="blog__body">
+                            <header class="blog__title blog__title--line-right mb-5">
+                                <h4>Backend разработка</h4>
+                            </header>
+                            <div class="blog__desc">
+                                <p>Программно-аппаратная часть сервиса. Бэкенд
+                                    отвечает за осуществление функционирования
+                                    внутренней части веб-сайта.
+                                    Языки программирования, которые мы изпользуем в Backend
+                                    PHP + Python + MySql
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- blog-2/end -->
+
+                    <!-- blog-3 -->
+                    <section class="blog blog--indent wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="blog__body">
+                            <header class="blog__title blog__title--line-left mb-5">
+                                <h4>Настройка сервера</h4>
+                            </header>
+                            <div class="blog__desc">
+                                <p>В целях повышения производительности
+                                    ИТ-инфраструктуры вашей компании, предлагаем
+                                    весь спектр услуг по настройке и администрированию
+                                    серверов на базе
+                                    операционных систем Windows, GNU/Linux
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- blog-3/end -->
                 </div>
             </div>
-        </div>
+        </section>
         <!-- three/end -->
 
         <!-- four -->
-        <div class="s-wrap s-wrap--inner-center s-wrap--gradient">
+        <div id="works" class="s-wrap s-wrap--pb0 s-wrap--gradient">
             <div class="container">
-                <div class="o-content">
-                    <div class="o-content-flex-sb mb-5">
-                        <!-- page-title -->
-                        <header class="block-heading mobile-mb-2">
-                            <h2>Наши работы, на которых мы специализируемся</h2>
-                        </header>
-                        <!-- page-title/end -->
+                <div class="inner">
+                    <!-- page-title -->
+                    <header class="block-heading text-center ml-auto mb-5 wow animate__fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".3">
+                        <h2>Наши проекты</h2>
+                    </header>
+                    <!-- page-title/end -->
 
-                        <div class="btn-group">
-                            <a href="#" class="btn btn-primary">Все услуги</a>
-                        </div>
-                    </div>
-                    <!-- line -->
-                    <section class="box-line mb-5">
+                    <!-- row -->
+                    <div class="row">
                         <!-- item-1 -->
-                        {% include 'main_app/reusable/box-our-direction.html' with title='Frontend разработка' text='Клиентская сторона пользовательского интерфейса Большой опыт в верстке как одностраничные сайты (Landing page), так и масштабные проекты интернет-магазинов и сайты крупных компаний' staticName='images/work.jpg' urlLink='#' urlText='Подробнее' %}
+                        <div class="col-2 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3">
+                            <div class="card card--images">
+                                <div class="card__body">
+                                    <div class="card--images__body mb-4">
+                                        <img src="{% static 'images/bg/bg.svg' %}" alt="">
+                                    </div>
+                                    <header class="card__title text-center">
+                                        <h5>WebTech studio</h5>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
                         <!-- item-1/end -->
 
                         <!-- item-2 -->
-                        {% include 'main_app/reusable/box-our-direction.html' with title='Backend разработка' text='Программно-аппаратная часть сервиса. Backend отвечает за осуществление функционирования внутренней части веб-сайта, мы используем PHP + MySql' staticName='images/work.jpg' urlLink='#' urlText='Подробнее' %}
+                        <div class="col-2 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3">
+                            <div class="card card--images">
+                                <div class="card__body">
+                                    <div class="card--images__body mb-4">
+                                        <img src="{% static 'images/bg/bg.svg' %}" alt="">
+                                    </div>
+                                    <header class="card__title text-center">
+                                        <h5>WebTech studio</h5>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
                         <!-- item-2/end -->
+                    </div>
+                    <!-- row/end -->
 
-                        <!-- item-3 -->
-                        {% include 'main_app/reusable/box-our-direction.html' with title='Настройка сервера' text='В целях повышения производительности ИТ-инфраструктуры вашей компании, предлагаем весь спектр услуг по настройке серверов на базе операционных систем Windows, Ubuntu' staticName='images/work.jpg' urlLink='#' urlText='Подробнее' %}
-                        <!-- item-3/end -->
-                    </section>
-                    <!-- line/end -->
-                    <div class="divider"></div>
+                    <!-- row -->
+                    <div class="row mb-5">
+                        <!-- item-1 -->
+                        <div class="col-2 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3">
+                            <div class="card card--images">
+                                <div class="card__body">
+                                    <div class="card--images__body mb-4">
+                                        <img src="{% static 'images/bg/bg.svg' %}" alt="">
+                                    </div>
+                                    <header class="card__title text-center">
+                                        <h5>WebTech studio</h5>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-1/end -->
+
+                        <!-- item-2 -->
+                        <div class="col-2 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3">
+                            <div class="card card--images">
+                                <div class="card__body">
+                                    <div class="card--images__body mb-4">
+                                        <img src="{% static 'images/bg/bg.svg' %}" alt="">
+                                    </div>
+                                    <header class="card__title text-center">
+                                        <h5>WebTech studio</h5>
+                                    </header>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-2/end -->
+                    </div>
+                    <!-- row/end -->
+
+                </div>
+                <div class="form-wrap s-wrap--block-bottom wow animate__fadeInUpBig" data-wow-duration="1s"
+                     data-wow-delay=".3s">
+                    <div class="inner text-center">
+                        <header class="block-heading text-center ml-auto mb-3">
+                            <h5>Свяжитесь с нами</h5>
+                        </header>
+                        <form class="form" action="">
+                            <div class="form__group">
+                                <input class="form__input" type="email" name="email" id="email"
+                                       placeholder="Введите ваш email">
+                            </div>
+                            <div class="form__group">
+                                <input class="form__input" type="text" name="title" id="title"
+                                       placeholder="Заголовок сообщения">
+                            </div>
+                            <div class="form__group mb-3">
+                                <textarea class="form__input" name="desc" id="desc" cols="30" rows="10"
+                                          placeholder="Описание"></textarea>
+                            </div>
+                            <button class="btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- four/end -->
-
-        <!-- five -->
-        <div class="s-wrap s-wrap--inner-center s-wrap--overlay">
-            <div class="container">
-                <div class="o-content text-center">
-                    <!-- page-title -->
-                    <header class="block-heading ml-auto mb-5">
-                        <h2 class="mb-1">Наши проекты</h2>
-                        <p>Вот несколько работ от нас</p>
-                    </header>
-                    <!-- page-title/end -->
-
-                    <!-- line -->
-                    <section class="box-line mb-5">
-                        <!-- item-1 -->
-                        {% include 'main_app/reusable/our-works-box.html' with staticName='images/work.jpg' %}
-                        <!-- item-1/end -->
-
-                        <!-- item-2 -->
-                         {% include 'main_app/reusable/our-works-box.html' with staticName='images/work.jpg' %}
-                        <!-- item-2/end -->
-
-                        <!-- item-3 -->
-                         {% include 'main_app/reusable/our-works-box.html' with staticName='images/work.jpg' %}
-                        <!-- item-3/end -->
-                    </section>
-                    <!-- line/end -->
-                    <a class="btn btn-primary" href="#">Все проекты</a>
-                </div>
-            </div>
-        </div>
-        <!-- five/end -->
-
-        <!-- six -->
-        <div class="s-wrap s-wrap--inner-center">
-            <div class="container">
-                <div class="o-content text-center">
-                    <!-- page-title -->
-                    <header class="block-heading ml-auto mb-5">
-                        <h2>Свяжитесь с нами</h2>
-                    </header>
-                    <!-- page-title/end -->
-
-                    <!-- form -->
-                    <form class="form m-auto" action="">
-                        <!-- item-1 -->
-                        <div class="form_group">
-                            <input class="form__input" type="email" placeholder="Ваш email">
-                        </div>
-                        <!-- item-1/end -->
-
-                        <!-- item-2-->
-                        <div class="form_group">
-                            <input class="form__input" type="text" placeholder="Заголовок">
-                        </div>
-                        <!-- item-2/end -->
-
-                        <!-- item-3 -->
-                        <div class="form_group">
-                            <textarea class="form__input" type="text" placeholder="Описание"></textarea>
-                        </div>
-                        <!-- item-3/end -->
-                    </form>
-                    <!-- form/end -->
-                </div>
-            </div>
-        </div>
-        <!-- six/end -->
     </main>
     {% include 'reusable/footer.html' %}
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://kit.fontawesome.com/e6391bfd30.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>new WOW().init();</script>
+    <script src={% static 'js/app.js' %}></script>
 {% endblock %}
