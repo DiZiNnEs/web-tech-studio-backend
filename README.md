@@ -5,6 +5,12 @@
 3) Installed `virtualenv` (command to install: `pip install virtualenv`)
 4) Installed `git` ([Installation guide](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/))
 
+## For Linux users
+```bash
+(env)$ sudo apt install python3-dev libpq-dev
+(env)$ pip install psycopg2
+```
+
 ## Setup
 
 The first thing to do is to clone the repository:
