@@ -163,36 +163,15 @@
                 <!-- row -->
                 <div class="row">
                     <!-- item-1 -->
-                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay=".1s">
-                        <div class="card card--works">
-                            <div class="card__body">
-                                <h5 class="text-purple">2</h5>
-                                <p>Интернет-магазин</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% include 'main_app/reusable/completed-projects.html' with number=2 title='Интернет-магазин' second=".1s"%}
                     <!-- item-1/end -->
 
                     <!-- item-2 -->
-                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay=".5s">
-                        <div class="card card--works">
-                            <div class="card__body">
-                                <h5 class="text-purple">12</h5>
-                                <p>Лендинг</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% include 'main_app/reusable/completed-projects.html' with number=12 title='Лендинг' second=".5s"%}
                     <!-- item-2/end -->
 
                     <!-- item-3 -->
-                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="1s">
-                        <div class="card card--works">
-                            <div class="card__body">
-                                <h5 class="text-purple">4</h5>
-                                <p>Мульти-лендинг</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% include 'main_app/reusable/completed-projects.html' with number=4 title='Мульти-лендинг' second=".1s"%}
                     <!-- item-3/end -->
                 </div>
                 <!-- row/end -->
@@ -200,36 +179,15 @@
                 <!-- row -->
                 <div class="row">
                     <!-- item-1 -->
-                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay=".1s">
-                        <div class="card card--works">
-                            <div class="card__body">
-                                <h5 class="text-purple">1</h5>
-                                <p>Социальная сеть</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% include 'main_app/reusable/completed-projects.html' with number=1 title='Социальная сеть' second=".1s"%}
                     <!-- item-1/end -->
 
                     <!-- item-2 -->
-                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay=".5s">
-                        <div class="card card--works">
-                            <div class="card__body">
-                                <h5 class="text-purple">7</h5>
-                                <p>Сайта-витрин</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% include 'main_app/reusable/completed-projects.html' with number=7 title='Сайта-витрин' second=".5s"%}
                     <!-- item-2/end -->
 
                     <!-- item-3 -->
-                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="1s">
-                        <div class="card card--works">
-                            <div class="card__body">
-                                <h5 class="text-purple">8</h5>
-                                <p>Промо-сайтов</p>
-                            </div>
-                        </div>
-                    </div>
+                    {% include 'main_app/reusable/completed-projects.html' with number=8 title='Промо-сайтов' second=".5s"%}
                     <!-- item-3/end -->
                 </div>
                 <!-- row/end -->
@@ -249,56 +207,15 @@
                     <!-- page-title/end -->
 
                     <!-- blog-1 -->
-                    <section class="blog blog--indent wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                        <div class="blog__body">
-                            <header class="blog__title blog__title--line-left mb-5">
-                                <h4>Frontend разработка</h4>
-                            </header>
-                            <div class="blog__desc">
-                                <p>Клиентская сторона пользовательского интерфейса
-                                    Большой опыт в верстке как одностраничные сайты
-                                    (Landing page), так и масштабные проекты интернет-магазинов
-                                    и сайты крупных компаний </p>
-                            </div>
-                        </div>
-                    </section>
+                    {% include 'main_app/reusable/stack-technologies.html' with className='blog blog--indent wow animate__fadeIn' classNameForLine='blog__title blog__title--line-left mb-5' title='Frontend разработка' text='Клиентская сторона пользовательского интерфейса Большой опыт в верстке как одностраничные сайты (Landing page), так и масштабные проекты интернет-магазинов и сайты крупных компаний' %}
                     <!-- blog-1/end -->
 
                     <!-- blog-2 -->
-                    <section class="blog blog--indent blog--right wow animate__fadeIn" data-wow-duration="1s"
-                             data-wow-delay="1s">
-                        <div class="blog__body">
-                            <header class="blog__title blog__title--line-right mb-5">
-                                <h4>Backend разработка</h4>
-                            </header>
-                            <div class="blog__desc">
-                                <p>Программно-аппаратная часть сервиса. Бэкенд
-                                    отвечает за осуществление функционирования
-                                    внутренней части веб-сайта.
-                                    Языки программирования, которые мы изпользуем в Backend
-                                    PHP + Python + MySql
-                                </p>
-                            </div>
-                        </div>
-                    </section>
+                    {% include 'main_app/reusable/stack-technologies.html' with className='blog blog--indent blog--right wow animate__fadeIn' classNameForLine='blog__title blog__title--line-right mb-5' title='Backend разработка' text='Программно-аппаратная часть сервиса. Бэкенд отвечает за осуществление функционирования внутренней части веб-сайта. Технологии, которые мы изпользуем в Backend PHP + Python + MySql' %}
                     <!-- blog-2/end -->
 
                     <!-- blog-3 -->
-                    <section class="blog blog--indent wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                        <div class="blog__body">
-                            <header class="blog__title blog__title--line-left mb-5">
-                                <h4>Настройка сервера</h4>
-                            </header>
-                            <div class="blog__desc">
-                                <p>В целях повышения производительности
-                                    ИТ-инфраструктуры вашей компании, предлагаем
-                                    весь спектр услуг по настройке и администрированию
-                                    серверов на базе
-                                    операционных систем Windows, GNU/Linux
-                                </p>
-                            </div>
-                        </div>
-                    </section>
+                    {% include 'main_app/reusable/stack-technologies.html' with className='blog blog--indent wow animate__fadeIn' classNameForLine='blog__title blog__title--line-left mb-5' title='Настройка сервера' text='В целях повышения производительности ИТ-инфраструктуры вашей компании, предлагаем весь спектр услуг по настройке и администрированию серверов на базе операционных систем Windows, GNU/Linux' %}
                     <!-- blog-3/end -->
                 </div>
             </div>
