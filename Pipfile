@@ -9,6 +9,7 @@ gunicorn = "*"
 whitenoise = "*"
 python-dotenv = "*"
 pillow = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
