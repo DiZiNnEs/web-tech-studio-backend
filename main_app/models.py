@@ -13,3 +13,18 @@ class Project(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Customer(models.Model):
+    email = models.EmailField()
+    name = models.CharField(max_length=128)
+    heading = models.CharField(max_length=128)
+    description = models.TextField()
+
+    class Meta:
+        db_table = 'customer'
+        verbose_name = 'Заказчик'
+        verbose_name_plural = 'Заказчики'
+
+    def __str__(self):
+        return f'Заказчик {self.name} | {self.heading}'
