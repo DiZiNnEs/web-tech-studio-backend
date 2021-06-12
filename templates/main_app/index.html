@@ -265,18 +265,19 @@
                         <header class="block-heading text-center ml-auto mb-3">
                             <h5>Свяжитесь с нами</h5>
                         </header>
-                        <form class="form" action="">
+                        <form class="form" method="POST">
+                            {% csrf_token %}
                             <div class="form__group">
-                                <input class="form__input" type="email" name="email" id="email"
-                                       placeholder="Введите ваш email">
+                                {{ form.email }}
                             </div>
                             <div class="form__group">
-                                <input class="form__input" type="text" name="title" id="title"
-                                       placeholder="Заголовок сообщения">
+                                {{ form.name }}
+                            </div>
+                            <div class="form__group">
+                               {{ form.heading }}
                             </div>
                             <div class="form__group mb-3">
-                                <textarea class="form__input" name="desc" id="desc" cols="30" rows="10"
-                                          placeholder="Описание"></textarea>
+                               {{ form.description }}
                             </div>
                             <button class="btn" type="submit">Отправить</button>
                         </form>
