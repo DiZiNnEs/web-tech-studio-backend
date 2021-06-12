@@ -1,0 +1,16 @@
+{% load static %}
+<div class="col-2 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3">
+    <div class="card card--images">
+        <div class="card__body">
+            <div class="card--images__body mb-1">
+                <img src="{% static staticName %}" alt="">
+            </div>
+            <header class="card__title">
+                <h5>{{ title }}</h5>
+            </header>
+            <footer class="card__link">
+                <a href="#">Узнать больше <i class="fas fa-long-arrow-alt-right"></i></a>
+            </footer>
+        </div>
+    </div>
+</div>

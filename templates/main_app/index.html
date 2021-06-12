@@ -163,15 +163,15 @@
                 <!-- row -->
                 <div class="row">
                     <!-- item-1 -->
-                    {% include 'main_app/reusable/completed-projects.html' with number=2 title='Интернет-магазин' second=".1s"%}
+                    {% include 'main_app/reusable/completed-projects.html' with number=2 title='Интернет-магазин' second=".1s" %}
                     <!-- item-1/end -->
 
                     <!-- item-2 -->
-                    {% include 'main_app/reusable/completed-projects.html' with number=12 title='Лендинг' second=".5s"%}
+                    {% include 'main_app/reusable/completed-projects.html' with number=12 title='Лендинг' second=".5s" %}
                     <!-- item-2/end -->
 
                     <!-- item-3 -->
-                    {% include 'main_app/reusable/completed-projects.html' with number=4 title='Мульти-лендинг' second=".1s"%}
+                    {% include 'main_app/reusable/completed-projects.html' with number=4 title='Мульти-лендинг' second=".1s" %}
                     <!-- item-3/end -->
                 </div>
                 <!-- row/end -->
@@ -179,15 +179,15 @@
                 <!-- row -->
                 <div class="row">
                     <!-- item-1 -->
-                    {% include 'main_app/reusable/completed-projects.html' with number=1 title='Социальная сеть' second=".1s"%}
+                    {% include 'main_app/reusable/completed-projects.html' with number=1 title='Социальная сеть' second=".1s" %}
                     <!-- item-1/end -->
 
                     <!-- item-2 -->
-                    {% include 'main_app/reusable/completed-projects.html' with number=7 title='Сайта-витрин' second=".5s"%}
+                    {% include 'main_app/reusable/completed-projects.html' with number=7 title='Сайта-витрин' second=".5s" %}
                     <!-- item-2/end -->
 
                     <!-- item-3 -->
-                    {% include 'main_app/reusable/completed-projects.html' with number=8 title='Промо-сайтов' second=".5s"%}
+                    {% include 'main_app/reusable/completed-projects.html' with number=8 title='Промо-сайтов' second=".5s" %}
                     <!-- item-3/end -->
                 </div>
                 <!-- row/end -->
@@ -236,39 +236,12 @@
                     <!-- row -->
                     <div class="row">
                         <!-- item-1 -->
-                        <div class="col-2 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3">
-                            <div class="card card--images">
-                                <div class="card__body">
-                                    <div class="card--images__body mb-1">
-                                        <img src="{% static 'images/bg/bg.svg' %}" alt="">
-                                    </div>
-                                    <header class="card__title">
-                                        <h5>WebTech studio</h5>
-                                    </header>
-                                    <footer class="card__link">
-                                        <a href="#">Узнать больше <i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </footer>
-                                </div>
-                            </div>
-                        </div>
+                        {% include 'main_app/reusable/completed-our-projects.html' with title='Project #1' staticName='images/bg/bg.svg' %}
                         <!-- item-1/end -->
 
                         <!-- item-2 -->
-                        <div class="col-2 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3">
-                            <div class="card card--images">
-                                <div class="card__body">
-                                    <div class="card--images__body mb-1">
-                                        <img src="{% static 'images/bg/bg.svg' %}" alt="">
-                                    </div>
-                                    <header class="card__title">
-                                        <h5>WebTech studio</h5>
-                                    </header>
-                                    <footer class="card__link">
-                                        <a href="#">Узнать больше <i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </footer>
-                                </div>
-                            </div>
-                        </div>
+
+                        {% include 'main_app/reusable/completed-our-projects.html' with title='Project #2' staticName='images/bg/bg.svg' %}
                         <!-- item-2/end -->
                     </div>
                     <!-- row/end -->
@@ -276,39 +249,11 @@
                     <!-- row -->
                     <div class="row mb-5">
                         <!-- item-1 -->
-                        <div class="col-2 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3">
-                            <div class="card card--images">
-                                <div class="card__body">
-                                    <div class="card--images__body mb-1">
-                                        <img src="{% static 'images/bg/bg.svg' %}" alt="">
-                                    </div>
-                                    <header class="card__title">
-                                        <h5>WebTech studio</h5>
-                                    </header>
-                                    <footer class="card__link">
-                                        <a href="#">Узнать больше <i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </footer>
-                                </div>
-                            </div>
-                        </div>
+                        {% include 'main_app/reusable/completed-our-projects.html' with title='Project #3' staticName='images/bg/bg.svg' %}
                         <!-- item-1/end -->
 
                         <!-- item-2 -->
-                        <div class="col-2 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".3">
-                            <div class="card card--images">
-                                <div class="card__body">
-                                    <div class="card--images__body mb-1">
-                                        <img src="{% static 'images/bg/bg.svg' %}" alt="">
-                                    </div>
-                                    <header class="card__title">
-                                        <h5>WebTech studio</h5>
-                                    </header>
-                                    <footer class="card__link">
-                                        <a href="#">Узнать больше <i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </footer>
-                                </div>
-                            </div>
-                        </div>
+                        {% include 'main_app/reusable/completed-our-projects.html' with title='Project #4' staticName='images/bg/bg.svg' %}
                         <!-- item-2/end -->
                     </div>
                     <!-- row/end -->
@@ -343,8 +288,6 @@
     </main>
 
     {% include 'reusable/footer.html' %}
-
-
 
 {% endblock %}
 
