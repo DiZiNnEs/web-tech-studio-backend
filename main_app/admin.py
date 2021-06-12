@@ -1,3 +1,13 @@
 from django.contrib import admin
 
-# Register your models here.
+from main_app.models import Project, Customer
+
+
+@admin.register(Project)
+class AdminProject(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Customer)
+class AdminCustomer(admin.ModelAdmin):
+    pass

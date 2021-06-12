@@ -7,197 +7,296 @@
 {% block body %}
     {% load static %}
     {% include 'reusable/navbar.html' %}
-    <main id="main" class="main">
-        <!-- one -->
-        <section class="s-wrap s-wrap--inner-center s-wrap--fscreen dark-bg">
+
+    <main class="main">
+        <!-- first-block -->
+        <section id="home" class="s-wrap s-wrap--fscreen s-bg">
             <div class="container">
-                <div class="o-content-flex-end">
+                <div class="inner-Ycenter">
                     <!-- page-title -->
-                    <arcticle class="block-heading text-end">
-                        <p class="text-white mb-2">IT - WebTech studio</p>
-                        <h1 class="mb-1">Мы создаем качественный и востребованный продукт</h1>
-                        <a href="#" class="btn btn-primary">Наши проекты</a>
-                    </arcticle>
+                    <article class="block-heading block-heading--indent order mb-5">
+                        <h1 class="wow animate__fadeInLeft order" data-wow-duration="2s" data-wow-delay=".5s">Мы создаем
+                            качественный и востребованный продукт</h1>
+                        <p class="text-white mb-1 wow animate__fadeInLeft" data-wow-duration="1s">
+                            <span class="text-purple">IT - WebTech</span>
+                            studio
+                        </p>
+                    </article>
+                    <button id="btnWorks" class="btn wow animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="1s">Наши проекты
+                    </button>
                     <!-- page-title/end -->
                 </div>
             </div>
         </section>
-        <!-- one/end -->
+        <!-- first-block/end -->
 
         <!-- two -->
-        <section class="s-wrap">
+        <section id="services" class="s-wrap s-wrap--block-left wow animate__fadeInLeft" data-wow-duration="1.5s"
+                 data-wow-delay=".5s">
             <div class="container">
-                <div class="o-content text-center">
-                    <!-- page-title -->
-                    <header class="block-heading ml-auto mb-5">
-                        <h2>Ваши преимущества в сотрудничестве с нами</h2>
-                    </header>
-                    <!-- page-title/end -->
+                <!-- row -->
+                <div class="row mb-5">
+                    <!-- item-1 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="1s">
+                        <div class="card card--services">
+                            <div class="card__body">
+                                <div class="card__icon mb-4">
+                                    <svg display="none">
+                                        <symbol id="code" viewBox="0 0 512 512">
+                                            <g>
+                                                <path d="m474.5 71.5h-26.261c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h26.261c12.406 0 22.5 10.094 22.5 22.5v34.5h-482v-34.5c0-12.406 10.093-22.5 22.5-22.5h377.809c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5h-377.809c-20.678 0-37.5 16.822-37.5 37.5v82.681c0 4.143 3.358 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-33.181h482v193.366c0 4.143 3.357 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-242.866c0-20.678-16.822-37.5-37.5-37.5z"/>
+                                                <path d="m504.5 375.994c-4.143 0-7.5 3.357-7.5 7.5v19.506c0 12.406-10.094 22.5-22.5 22.5h-437c-12.407 0-22.5-10.094-22.5-22.5v-179.133c0-4.143-3.358-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v179.133c0 20.678 16.822 37.5 37.5 37.5h437c20.678 0 37.5-16.822 37.5-37.5v-19.506c0-4.142-3.357-7.5-7.5-7.5z"/>
+                                                <path d="m108.482 234.457c-2.929-2.928-7.678-2.928-10.606 0l-45.07 45.07c-1.407 1.407-2.197 3.314-2.197 5.304s.79 3.896 2.197 5.304l44.474 44.474c1.464 1.464 3.384 2.196 5.303 2.196s3.839-.732 5.303-2.196c2.929-2.93 2.929-7.678 0-10.607l-39.171-39.17 39.767-39.767c2.93-2.93 2.93-7.678 0-10.608z"/>
+                                                <path d="m209.344 334.608c1.464 1.464 3.384 2.196 5.303 2.196s3.839-.732 5.303-2.196l44.475-44.474c1.406-1.407 2.196-3.314 2.196-5.304s-.79-3.896-2.196-5.304l-45.071-45.07c-2.929-2.928-7.678-2.928-10.606 0-2.929 2.93-2.929 7.678 0 10.607l39.768 39.767-39.171 39.17c-2.93 2.931-2.93 7.679-.001 10.608z"/>
+                                                <path d="m131.99 362.234c3.025 0 5.876-1.844 7.013-4.841l53.294-140.398c1.47-3.873-.478-8.204-4.35-9.674-3.872-1.471-8.204.478-9.673 4.35l-53.294 140.4c-1.47 3.872.478 8.203 4.35 9.673.876.333 1.775.49 2.66.49z"/>
+                                                <path d="m33.006 115.371c0 12.406 10.093 22.5 22.5 22.5s22.5-10.094 22.5-22.5-10.093-22.5-22.5-22.5-22.5 10.094-22.5 22.5zm30 0c0 4.136-3.364 7.5-7.5 7.5s-7.5-3.364-7.5-7.5 3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5z"/>
+                                                <path d="m91.166 115.371c0 12.406 10.093 22.5 22.5 22.5s22.5-10.094 22.5-22.5-10.093-22.5-22.5-22.5-22.5 10.094-22.5 22.5zm30 0c0 4.136-3.364 7.5-7.5 7.5s-7.5-3.364-7.5-7.5 3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5z"/>
+                                                <path d="m149.325 115.371c0 12.406 10.093 22.5 22.5 22.5s22.5-10.094 22.5-22.5-10.093-22.5-22.5-22.5-22.5 10.094-22.5 22.5zm30 0c0 4.136-3.364 7.5-7.5 7.5s-7.5-3.364-7.5-7.5 3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5z"/>
+                                                <path d="m335.5 242.368h47c12.406 0 22.5-10.094 22.5-22.5s-10.094-22.5-22.5-22.5h-47c-12.406 0-22.5 10.094-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h47c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-47c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z"/>
+                                                <path d="m335.5 302.368h124c12.406 0 22.5-10.094 22.5-22.5s-10.094-22.5-22.5-22.5h-124c-12.406 0-22.5 10.094-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h124c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-124c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z"/>
+                                                <path d="m335.5 362.368h87.165c12.406 0 22.5-10.094 22.5-22.5s-10.094-22.5-22.5-22.5h-87.165c-12.406 0-22.5 10.094-22.5 22.5s10.094 22.5 22.5 22.5zm0-30h87.165c4.136 0 7.5 3.364 7.5 7.5s-3.364 7.5-7.5 7.5h-87.165c-4.136 0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5z"/>
+                                            </g>
+                                        </symbol>
+                                    </svg>
+                                    <svg class="ico">
+                                        <use xlink:href="#code"></use>
+                                    </svg>
+                                </div>
+                                <header class="card__title">
+                                    <h5>Создание сайта</h5>
+                                    <p>Верстка макета для сайта - дизайн взаимодествия
+                                        с пользователем. Большой опыт в разработке сайтов
+                                        как с посадкой на СMS, так и с разработаной
+                                        в ручную - системой управления сайтом
+                                    </p>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-1/end -->
 
-                    <!-- line -->
-                    <section class="box-line mb-5">
-                        {% include 'main_app/reusable/box-item.html' with name='Создание сайта' text='Профиссеональная разработка сайтов с использованием соверменных инстументов' staticName='images/coding.svg' %}
+                    <!-- item-2 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="1.5s">
+                        <div class="card card--services">
+                            <div class="card__body">
+                                <div class="card__icon mb-4">
+                                    <svg display="none">
+                                        <symbol id="server" viewBox="0 0 512 512">
+                                            <g>
+                                                <path d="m457.393 157.301c15.193 0 27.554-12.361 27.554-27.554v-62.391c0-15.193-12.361-27.554-27.554-27.554h-.771v-12.248c0-15.193-12.361-27.554-27.553-27.554h-346.137c-15.193 0-27.554 12.361-27.554 27.554v12.248h-.771c-15.193 0-27.554 12.361-27.554 27.554v62.391c0 15.193 12.361 27.554 27.554 27.554h.771v24.774h-.771c-15.193 0-27.554 12.361-27.554 27.554v62.391c0 15.193 12.361 27.554 27.554 27.554h.771v24.773h-.771c-15.193 0-27.554 12.361-27.554 27.554v62.391c0 15.193 12.361 27.554 27.554 27.554h.771v12.249c0 14.233 10.849 25.98 24.711 27.408v7.954c0 12.431 10.114 22.544 22.544 22.544h29.217c12.431 0 22.544-10.113 22.544-22.544v-7.807h203.211v7.807c0 12.431 10.113 22.544 22.544 22.544h29.217c12.431 0 22.544-10.113 22.544-22.544v-7.954c13.862-1.427 24.711-13.174 24.711-27.408v-12.249h.771c15.193 0 27.554-12.361 27.554-27.554v-62.391c0-15.193-12.361-27.554-27.554-27.554h-.771v-24.773h.771c15.193 0 27.554-12.361 27.554-27.554v-62.391c0-15.193-12.361-27.554-27.554-27.554h-.771v-24.774zm-415.311-27.553v-62.392c0-6.906 5.618-12.525 12.525-12.525h72.326c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515h-56.526v-12.247c0-6.906 5.618-12.524 12.525-12.524h346.137c6.906 0 12.524 5.618 12.524 12.524v12.248h-284.602c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h300.402c6.906 0 12.524 5.618 12.524 12.525v62.391c0 6.906-5.618 12.524-12.524 12.524h-402.786c-6.906 0-12.525-5.618-12.525-12.524zm97.283 359.708c0 4.144-3.371 7.515-7.515 7.515h-29.217c-4.144 0-7.515-3.371-7.515-7.515v-7.807h44.247zm270.002 7.515h-29.217c-4.144 0-7.515-3.371-7.515-7.515v-7.807h44.247v7.807c0 4.144-3.371 7.515-7.515 7.515zm60.551-145.07v62.391c0 6.906-5.618 12.524-12.524 12.524h-243.733c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h227.932v12.249c0 6.906-5.618 12.524-12.524 12.524h-346.137c-6.906 0-12.525-5.618-12.525-12.524v-12.249h113.195c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515h-128.995c-6.906 0-12.525-5.618-12.525-12.524v-62.391c0-6.906 5.618-12.525 12.525-12.525h402.787c6.905.001 12.524 5.619 12.524 12.525zm-28.325-27.554h-371.186v-24.773h371.186zm0-142.272h-147.914c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h163.714c6.906 0 12.524 5.618 12.524 12.524v62.391c0 6.906-5.618 12.525-12.524 12.525h-402.786c-6.906 0-12.525-5.618-12.525-12.525v-62.391c0-6.906 5.618-12.524 12.525-12.524h209.013c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515h-193.213v-24.774h371.186z"/>
+                                                <path d="m85.294 121.503h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515h-24.006c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515z"/>
+                                                <path d="m141.962 121.503h24.007c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515h-24.007c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515z"/>
+                                                <path d="m198.631 121.503h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515h-24.006c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515z"/>
+                                                <path d="m85.294 90.631h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515h-24.006c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515z"/>
+                                                <path d="m141.962 90.631h24.007c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515h-24.007c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515z"/>
+                                                <path d="m198.631 90.631h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515h-24.006c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515z"/>
+                                                <path d="m400.867 124.833c14.491 0 26.28-11.79 26.28-26.281s-11.789-26.28-26.28-26.28-26.28 11.789-26.28 26.28 11.789 26.281 26.28 26.281zm0-37.532c6.204 0 11.25 5.047 11.25 11.251s-5.047 11.251-11.25 11.251c-6.204 0-11.251-5.047-11.251-11.251s5.047-11.251 11.251-11.251z"/>
+                                                <path d="m329.884 124.833c14.491 0 26.281-11.79 26.281-26.281s-11.79-26.28-26.281-26.28-26.28 11.789-26.28 26.28 11.789 26.281 26.28 26.281zm0-37.532c6.204 0 11.251 5.047 11.251 11.251s-5.047 11.251-11.251 11.251c-6.203 0-11.25-5.047-11.25-11.251s5.047-11.251 11.25-11.251z"/>
+                                                <path d="m109.299 248.746h-24.005c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.006c4.151 0 7.515-3.364 7.515-7.515-.001-4.151-3.365-7.515-7.516-7.515z"/>
+                                                <path d="m165.969 248.746h-24.007c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.007c4.151 0 7.515-3.364 7.515-7.515-.001-4.151-3.365-7.515-7.515-7.515z"/>
+                                                <path d="m222.637 248.746h-24.006c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515z"/>
+                                                <path d="m109.299 217.874h-24.005c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.006c4.151 0 7.515-3.364 7.515-7.515-.001-4.151-3.365-7.515-7.516-7.515z"/>
+                                                <path d="m165.969 217.874h-24.007c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.007c4.151 0 7.515-3.364 7.515-7.515-.001-4.151-3.365-7.515-7.515-7.515z"/>
+                                                <path d="m222.637 217.874h-24.006c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515z"/>
+                                                <path d="m400.867 267.105c14.491 0 26.28-11.789 26.28-26.28s-11.789-26.28-26.28-26.28-26.28 11.789-26.28 26.28 11.789 26.28 26.28 26.28zm0-37.531c6.204 0 11.25 5.047 11.25 11.251 0 6.203-5.047 11.25-11.25 11.25-6.204 0-11.251-5.047-11.251-11.25 0-6.204 5.047-11.251 11.251-11.251z"/>
+                                                <path d="m329.884 267.105c14.491 0 26.281-11.789 26.281-26.28s-11.79-26.28-26.281-26.28-26.28 11.789-26.28 26.28c.001 14.491 11.789 26.28 26.28 26.28zm0-37.531c6.204 0 11.251 5.047 11.251 11.251 0 6.203-5.047 11.25-11.251 11.25-6.203 0-11.25-5.047-11.25-11.25 0-6.204 5.047-11.251 11.25-11.251z"/>
+                                                <path d="m109.299 391.019h-24.005c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.365-7.515-7.516-7.515z"/>
+                                                <path d="m165.969 391.019h-24.007c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.007c4.151 0 7.515-3.364 7.515-7.515s-3.365-7.515-7.515-7.515z"/>
+                                                <path d="m222.637 391.019h-24.006c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515z"/>
+                                                <path d="m109.299 360.146h-24.005c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.365-7.515-7.516-7.515z"/>
+                                                <path d="m165.969 360.146h-24.007c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.007c4.151 0 7.515-3.364 7.515-7.515s-3.365-7.515-7.515-7.515z"/>
+                                                <path d="m222.637 360.146h-24.006c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h24.006c4.151 0 7.515-3.364 7.515-7.515s-3.364-7.515-7.515-7.515z"/>
+                                                <path d="m400.867 356.817c-14.491 0-26.28 11.789-26.28 26.28s11.789 26.28 26.28 26.28 26.28-11.789 26.28-26.28-11.789-26.28-26.28-26.28zm0 37.53c-6.204 0-11.251-5.047-11.251-11.251s5.047-11.25 11.251-11.25 11.25 5.047 11.25 11.25c0 6.204-5.047 11.251-11.25 11.251z"/>
+                                                <path d="m329.884 356.817c-14.491 0-26.28 11.789-26.28 26.28s11.789 26.28 26.28 26.28 26.281-11.789 26.281-26.28-11.789-26.28-26.281-26.28zm0 37.53c-6.203 0-11.25-5.047-11.25-11.251s5.047-11.25 11.25-11.25c6.204 0 11.251 5.047 11.251 11.25.001 6.204-5.046 11.251-11.251 11.251z"/>
+                                            </g>
+                                        </symbol>
+                                    </svg>
+                                    <svg class="ico">
+                                        <use xlink:href="#server"></use>
+                                    </svg>
+                                </div>
+                                <header class="card__title">
+                                    <h5>Настройка сервера</h5>
+                                    <p>В целях повышения производительности
+                                        ИТ-инфраструктуры вашей компании, предлагаем
+                                        весь спектр услуг по настройке и администрированию
+                                        серверов на базе
+                                        операционных систем Windows, GNU/Linux
+                                    </p>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-2/end -->
 
-                        {% include 'main_app/reusable/box-item.html' with name='Настройка сервера' text='Правильная и адаптивная конфигурация под разные системы по желанию нашего клиента' staticName='images/server.svg' %}
-
-                        {% include 'main_app/reusable/box-item.html' with name='SEO продвижение' text='Повышение рейтинга сайта в поисковый выдаче, а также его посещения пользователями' staticName='images/seo.svg' %}
-
-                    </section>
-                    <!-- line -->
-                    <a href="#" class="btn btn-primary">Все услуги</a>
+                    <!-- item-3 -->
+                    <div class="col wow animate__zoomIn" data-wow-duration="2s" data-wow-delay="2s">
+                        <div class="card card--services">
+                            <div class="card__body">
+                                <div class="card__icon mb-4">
+                                    <svg display="none">
+                                        <symbol id="seo" viewBox="0 0 512 512">
+                                            <g>
+                                                <path d="M32,168H16V136A40.045,40.045,0,0,1,56,96H328V80H312a8,8,0,0,1-5.657-13.657l48-48a8,8,0,0,1,11.314,0l48,48A8,8,0,0,1,408,80H392V96h32a40.045,40.045,0,0,1,40,40V296H448V136a24.028,24.028,0,0,0-24-24H392V256H376V72a8,8,0,0,1,8-8h4.687L360,35.313,331.313,64H336a8,8,0,0,1,8,8V264H328V112H56a24.028,24.028,0,0,0-24,24ZM56,416H189.247l-19.2,64H152v16H328V480H309.953l-10.29-34.3-15.326,4.6,8.911,29.7h-106.5l19.2-64H264V400H56a24.028,24.028,0,0,1-24-24v-8H256V352H32V184H16V376A40.045,40.045,0,0,0,56,416ZM296,280V152H264V336H56V320H88V256a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v64h16V200a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8V320h16V144a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8V280ZM136,264H104v56h32Zm80-56H184V320h32ZM56,128v16H72V128Zm48,0H88v16h16Zm16,0v16h16V128ZM488.967,455.033A24.167,24.167,0,0,1,496,472a23.978,23.978,0,0,1-24,24,24.5,24.5,0,0,1-16.967-7.033L416.74,450.675a96.074,96.074,0,1,1,33.935-33.935ZM448,368a80,80,0,1,0-80,80A80.091,80.091,0,0,0,448,368Zm29.652,98.348-36.387-36.389a96.887,96.887,0,0,1-11.306,11.306l36.389,36.387a7.993,7.993,0,1,0,11.3-11.3ZM432,368a64,64,0,1,1-64-64A64.072,64.072,0,0,1,432,368Zm-16,0a48,48,0,1,0-48,48A48.053,48.053,0,0,0,416,368Zm-80,0h16a16.019,16.019,0,0,1,16-16V336A32.036,32.036,0,0,0,336,368ZM440,64h16a48.053,48.053,0,0,0-48-48V32A32.036,32.036,0,0,1,440,64Z"/>
+                                            </g>
+                                        </symbol>
+                                    </svg>
+                                    <svg class="ico">
+                                        <use xlink:href="#seo"></use>
+                                    </svg>
+                                </div>
+                                <header class="card__title">
+                                    <h5>SEO продвижение</h5>
+                                    <p>Улучшение позиций в результатах ответа поисковых
+                                        систем на поставленные запросы пользователей.
+                                        Привлечение на сайт большее количество посетителей
+                                    </p>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-3/end -->
                 </div>
+                <!-- row/end -->
+
+                <!-- row -->
+                <div class="row">
+                    <!-- item-1 -->
+                    {% include 'main_app/reusable/completed-projects.html' with number=2 title='Интернет-магазин' second=".1s" %}
+                    <!-- item-1/end -->
+
+                    <!-- item-2 -->
+                    {% include 'main_app/reusable/completed-projects.html' with number=12 title='Лендинг' second=".5s" %}
+                    <!-- item-2/end -->
+
+                    <!-- item-3 -->
+                    {% include 'main_app/reusable/completed-projects.html' with number=4 title='Мульти-лендинг' second=".1s" %}
+                    <!-- item-3/end -->
+                </div>
+                <!-- row/end -->
+
+                <!-- row -->
+                <div class="row">
+                    <!-- item-1 -->
+                    {% include 'main_app/reusable/completed-projects.html' with number=1 title='Социальная сеть' second=".1s" %}
+                    <!-- item-1/end -->
+
+                    <!-- item-2 -->
+                    {% include 'main_app/reusable/completed-projects.html' with number=7 title='Сайта-витрин' second=".5s" %}
+                    <!-- item-2/end -->
+
+                    <!-- item-3 -->
+                    {% include 'main_app/reusable/completed-projects.html' with number=8 title='Промо-сайтов' second=".5s" %}
+                    <!-- item-3/end -->
+                </div>
+                <!-- row/end -->
             </div>
         </section>
         <!-- two/end -->
 
         <!-- three -->
-        <div class="s-wrap s-wrap--overlay">
+        <section class="s-wrap s-wrap--overlay">
             <div class="container">
-                <div class="o-content">
+                <div class="inner">
                     <!-- page-title -->
-                    <header class="block-heading mb-5">
-                        <h2>Стандарты</h2>
+                    <header class="block-heading block-heading--indent text-center ml-auto mb-5 wow animate__fadeIn"
+                            data-wow-duration="1s">
+                        <h2>Наши работы на которых мы специализируемся</h2>
                     </header>
                     <!-- page-title/end -->
 
-                    <p class="mb-3">Этот блок переделывается</p>
+                    <!-- blog-1 -->
+                    {% include 'main_app/reusable/stack-technologies.html' with className='blog blog--indent wow animate__fadeIn' classNameForLine='blog__title blog__title--line-left mb-5' title='Frontend разработка' text='Клиентская сторона пользовательского интерфейса Большой опыт в верстке как одностраничные сайты (Landing page), так и масштабные проекты интернет-магазинов и сайты крупных компаний' %}
+                    <!-- blog-1/end -->
 
-                    <div class="divider mb-5"></div>
-                    <!-- section-card -->
-                    <section class="wrap-line">
-                        <!-- card-1 -->
-                        {% include 'main_app/reusable/card.html' with title='Landing page' number='12' staticName='images/code.svg'  %}
-                        <!-- card-1/end -->
+                    <!-- blog-2 -->
+                    {% include 'main_app/reusable/stack-technologies.html' with className='blog blog--indent blog--right wow animate__fadeIn' classNameForLine='blog__title blog__title--line-right mb-5' title='Backend разработка' text='Программно-аппаратная часть сервиса. Бэкенд отвечает за осуществление функционирования внутренней части веб-сайта. Технологии, которые мы изпользуем в Backend PHP + Python + MySql' %}
+                    <!-- blog-2/end -->
 
-                        <!-- card-2 -->
-                         {% include 'main_app/reusable/card.html' with title='Multi Landing' number='2' staticName='images/code.svg' %}
-                        <!-- card-2/end -->
-
-                        <!-- card-3 -->
-                        {% include 'main_app/reusable/card.html' with title='Промо-сайт' number='5' staticName='images/code.svg' %}
-                        <!-- card-3/end -->
-
-                        <!-- card-4-->
-                        {% include 'main_app/reusable/card.html' with title='Сайт-витрина' number='3' staticName='images/code.svg' %}
-                        <!-- card-4/end -->
-
-                        <!-- card-5 -->
-                        {% include 'main_app/reusable/card.html' with title='Интернет-магазин' number='1' staticName='images/code.svg' %}
-                        <!-- card-5/end -->
-
-                        <!-- card-6 -->
-                        {% include 'main_app/reusable/card.html' with title='Социальная сеть' number='1' staticName='images/code.svg' %}
-                        <!-- card-6/end -->
-                    </section>
-                    <!-- section-card/end -->
+                    <!-- blog-3 -->
+                    {% include 'main_app/reusable/stack-technologies.html' with className='blog blog--indent wow animate__fadeIn' classNameForLine='blog__title blog__title--line-left mb-5' title='Настройка сервера' text='В целях повышения производительности ИТ-инфраструктуры вашей компании, предлагаем весь спектр услуг по настройке и администрированию серверов на базе операционных систем Windows, GNU/Linux' %}
+                    <!-- blog-3/end -->
                 </div>
             </div>
-        </div>
+        </section>
         <!-- three/end -->
 
         <!-- four -->
-        <div class="s-wrap s-wrap--inner-center s-wrap--gradient">
+        <div id="works" class="s-wrap s-wrap--pb0 s-wrap--gradient">
             <div class="container">
-                <div class="o-content">
-                    <div class="o-content-flex-sb mb-5">
-                        <!-- page-title -->
-                        <header class="block-heading mobile-mb-2">
-                            <h2>Наши работы, на которых мы специализируемся</h2>
-                        </header>
-                        <!-- page-title/end -->
+                <div class="inner">
+                    <!-- page-title -->
+                    <header class="block-heading text-center ml-auto mb-5 wow animate__fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".3">
+                        <h2>Наши проекты</h2>
+                    </header>
+                    <!-- page-title/end -->
 
-                        <div class="btn-group">
-                            <a href="#" class="btn btn-primary">Все услуги</a>
-                        </div>
-                    </div>
-                    <!-- line -->
-                    <section class="box-line mb-5">
+                    <!-- row -->
+                    <div class="row">
                         <!-- item-1 -->
-                        {% include 'main_app/reusable/box-our-direction.html' with title='Frontend разработка' text='Клиентская сторона пользовательского интерфейса Большой опыт в верстке как одностраничные сайты (Landing page), так и масштабные проекты интернет-магазинов и сайты крупных компаний' staticName='images/work.jpg' urlLink='#' urlText='Подробнее' %}
+                        {% include 'main_app/reusable/completed-our-projects.html' with title='Project #1' staticName='images/bg/bg.svg' %}
                         <!-- item-1/end -->
 
                         <!-- item-2 -->
-                        {% include 'main_app/reusable/box-our-direction.html' with title='Backend разработка' text='Программно-аппаратная часть сервиса. Backend отвечает за осуществление функционирования внутренней части веб-сайта, мы используем PHP + MySql' staticName='images/work.jpg' urlLink='#' urlText='Подробнее' %}
-                        <!-- item-2/end -->
 
-                        <!-- item-3 -->
-                        {% include 'main_app/reusable/box-our-direction.html' with title='Настройка сервера' text='В целях повышения производительности ИТ-инфраструктуры вашей компании, предлагаем весь спектр услуг по настройке серверов на базе операционных систем Windows, Ubuntu' staticName='images/work.jpg' urlLink='#' urlText='Подробнее' %}
-                        <!-- item-3/end -->
-                    </section>
-                    <!-- line/end -->
-                    <div class="divider"></div>
+                        {% include 'main_app/reusable/completed-our-projects.html' with title='Project #2' staticName='images/bg/bg.svg' %}
+                        <!-- item-2/end -->
+                    </div>
+                    <!-- row/end -->
+
+                    <!-- row -->
+                    <div class="row mb-5">
+                        <!-- item-1 -->
+                        {% include 'main_app/reusable/completed-our-projects.html' with title='Project #3' staticName='images/bg/bg.svg' %}
+                        <!-- item-1/end -->
+
+                        <!-- item-2 -->
+                        {% include 'main_app/reusable/completed-our-projects.html' with title='Project #4' staticName='images/bg/bg.svg' %}
+                        <!-- item-2/end -->
+                    </div>
+                    <!-- row/end -->
+
+                </div>
+                <div class="form-wrap s-wrap--block-bottom wow animate__fadeInUpBig" data-wow-duration="1s"
+                     data-wow-delay=".3s">
+                    <div class="inner text-center">
+                        <header class="block-heading text-center ml-auto mb-3">
+                            <h5>Свяжитесь с нами</h5>
+                        </header>
+                        <form class="form" method="POST">
+                            {% csrf_token %}
+                            <div class="form__group">
+                                {{ form.email }}
+                            </div>
+                            <div class="form__group">
+                                {{ form.name }}
+                            </div>
+                            <div class="form__group">
+                               {{ form.heading }}
+                            </div>
+                            <div class="form__group mb-3">
+                               {{ form.description }}
+                            </div>
+                            <button class="btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- four/end -->
-
-        <!-- five -->
-        <div class="s-wrap s-wrap--inner-center s-wrap--overlay">
-            <div class="container">
-                <div class="o-content text-center">
-                    <!-- page-title -->
-                    <header class="block-heading ml-auto mb-5">
-                        <h2 class="mb-1">Наши проекты</h2>
-                        <p>Вот несколько работ от нас</p>
-                    </header>
-                    <!-- page-title/end -->
-
-                    <!-- line -->
-                    <section class="box-line mb-5">
-                        <!-- item-1 -->
-                        {% include 'main_app/reusable/our-works-box.html' with staticName='images/work.jpg' %}
-                        <!-- item-1/end -->
-
-                        <!-- item-2 -->
-                         {% include 'main_app/reusable/our-works-box.html' with staticName='images/work.jpg' %}
-                        <!-- item-2/end -->
-
-                        <!-- item-3 -->
-                         {% include 'main_app/reusable/our-works-box.html' with staticName='images/work.jpg' %}
-                        <!-- item-3/end -->
-                    </section>
-                    <!-- line/end -->
-                    <a class="btn btn-primary" href="#">Все проекты</a>
-                </div>
-            </div>
-        </div>
-        <!-- five/end -->
-
-        <!-- six -->
-        <div class="s-wrap s-wrap--inner-center">
-            <div class="container">
-                <div class="o-content text-center">
-                    <!-- page-title -->
-                    <header class="block-heading ml-auto mb-5">
-                        <h2>Свяжитесь с нами</h2>
-                    </header>
-                    <!-- page-title/end -->
-
-                    <!-- form -->
-                    <form class="form m-auto" action="">
-                        <!-- item-1 -->
-                        <div class="form_group">
-                            <input class="form__input" type="email" placeholder="Ваш email">
-                        </div>
-                        <!-- item-1/end -->
-
-                        <!-- item-2-->
-                        <div class="form_group">
-                            <input class="form__input" type="text" placeholder="Заголовок">
-                        </div>
-                        <!-- item-2/end -->
-
-                        <!-- item-3 -->
-                        <div class="form_group">
-                            <textarea class="form__input" type="text" placeholder="Описание"></textarea>
-                        </div>
-                        <!-- item-3/end -->
-                    </form>
-                    <!-- form/end -->
-                </div>
-            </div>
-        </div>
-        <!-- six/end -->
     </main>
+
     {% include 'reusable/footer.html' %}
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://kit.fontawesome.com/e6391bfd30.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>new WOW().init();</script>
+    <script src={% static 'js/app.js' %}></script>
 {% endblock %}

@@ -1,20 +1,23 @@
 {% load static %}
-<header id="header" class="header">
+<header id="header" class="menu-wrap">
     <div class="container">
-        <nav class="navbar">
-            <div class="navbar-left">
-                <img src="{% static 'images/logo.svg' %}" alt="logo">
+        <nav id="menu" class="menu menu--huge">
+            <div class="menu__content-left">
+                <div class="menu__logo">
+                    <img src="{% static 'images/logo/logo.svg' %}" alt="logo">
+                </div>
             </div>
-            <div class="navbar-right">
-                <button id="burger" class="burger"><span></span></button>
+            <div class="menu__content-right">
+                <ul id="menuList" class="menu__list">
+                    <li class="menu__item"><a id="goHome" class="menu__link" href="#">Главная</a></li>
+                    <li class="menu__item"><a id="goServices" class="menu__link" href="#">Услуги</a></li>
+                    <li class="menu__item"><a id="goWorks" class="menu__link" href="#">Наши проекты</a></li>
+                    <li class="menu__item"><a id="goContacts" class="menu__link" href="#">Контакты</a></li>
+                </ul>
+                <button id="burger" class="menu__burger">
+                    <span></span>
+                </button>
             </div>
-            <ul id="collapse" class="navbar_ul">
-                <li class="navbar__item"><a href="{% url 'index' %}" class="navbar__link">Главная</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Наши проекты</a></li>
-                <li class="navbar__item"><a href="{% url 'services' %}" class="navbar__link">Услуги</a></li>
-                <li class="navbar__item"><a href="" class="navbar__link">Новости</a></li>
-                <li class="navbar__item"><a href="" class="navbar__link">Контакты</a></li>
-            </ul>
         </nav>
     </div>
 </header>
