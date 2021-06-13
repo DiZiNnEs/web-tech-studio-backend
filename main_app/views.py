@@ -21,7 +21,7 @@ class IndexView(CreateView):
         return context
 
     def form_valid(self, form):
-        username = form.cleaned_data.get('username')
+        username = form.cleaned_data.get('name')
         email = form.cleaned_data.get('email')
 
         subject = 'IT - WebTech studio'
