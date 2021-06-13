@@ -162,6 +162,9 @@
 
                 <!-- row -->
                 <div class="row">
+{#                    {% for project in first_six_projects %}#} TODO: Сделать поле в таблице с секундами
+{#                        {% include 'main_app/reusable/completed-projects.html' with number=project.count title=project.name second=".1s" %}#}
+{#                    {% endfor %}#}
                     <!-- item-1 -->
                     {% include 'main_app/reusable/completed-projects.html' with number=2 title='Интернет-магазин' second=".1s" %}
                     <!-- item-1/end -->
