@@ -16,7 +16,8 @@ class IndexView(CreateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data()
-        context['six_projects'] = Project.objects.all()[:6]
+        context['first_six_projects'] = Project.objects.all()[:3]
+        context['second_six_projects'] = Project.objects.all()[4:6]
         context['our_project'] = Project.objects.all()[:4]
         return context
 
